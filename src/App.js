@@ -14,7 +14,6 @@ function App() {
         `https://api.nasa.gov/planetary/apod?api_key=oRvfGOLxs1ZfgRXbCVUg7ucatO9tooIhNMhkExRW`
       )
       .then(response => {
-        console.log(response.data);
         setNasaInfo(response.data);
       })
       .catch(error => {
@@ -32,15 +31,8 @@ function App() {
         date={nasaInfo.date}
         explanation={nasaInfo.explanation}
       />
-      {/* <p>{nasaInfo.title}</p>
-      <p>{nasaInfo.date}</p>
-      <p>{nasaInfo.explanation}</p> */}
     </div>
   );
 }
 
 export default App;
-
-//<Photo />
-//<DateButtons />
-//<Description />

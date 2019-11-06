@@ -4,7 +4,7 @@ const Description = props => {
   return (
     <>
       <h2>{props.title}</h2>
-      <time datetime={props.date}>{props.date}</time>
+      <time dateTime={props.date}>{props.date}</time>
       <p>{props.explanation}</p>
     </>
   );
