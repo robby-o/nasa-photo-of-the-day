@@ -3,7 +3,7 @@ import React from 'react';
 const Photo = props => {
   return (
     <>
-      <img src={props.imgUrl} />
+      <img alt='NASA space shot' src={props.imgUrl} />
     </>
   );
 };
